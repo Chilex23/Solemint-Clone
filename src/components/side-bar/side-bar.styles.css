@@ -1,0 +1,80 @@
+.side-bar {
+    padding: 0 20px;
+    background-color: #fff;
+    color:rgb(61, 2, 61);
+}
+
+.side-bar-header {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.side-bar-btn button {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: rgb(116, 5, 116);;
+    border: 3px solid black;
+    border-radius: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.side-bar-body {
+    margin-top: 10px;
+}
+
+.side-bar-body-item {
+    padding: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s cubic-bezier(0,.33,1,.77)
+}
+
+.side-bar-body-item:hover {
+    background-color: rgb(240, 227, 240);
+}
+
+.side-bar-body-item.active {
+    background-color: rgb(240, 227, 240);
+}
+
+.side-bar-body-item p {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.side-bar-footer {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    background-color: rgb(240, 227, 240);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-copyright svg {
+    margin-right: 20px;
+}
