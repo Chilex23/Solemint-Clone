@@ -3,3 +3,12 @@
   display: grid;
   grid-template-columns: 22% 1fr;
 }
+
+@media screen and (max-width: 900px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content calc(100vh - 300px);
+    overflow: hidden;
+  }
+}
+  

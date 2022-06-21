@@ -4,6 +4,39 @@
     color:rgb(61, 2, 61);
 }
 
+.side-bar-hamburger {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
+.hamburger::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
 .side-bar-header {
     margin: 10px 0;
     text-align: center;
@@ -78,3 +111,22 @@
 .footer-copyright svg {
     margin-right: 20px;
 }
+
+@media screen and (max-width: 870px) {
+    .side-bar > *:not(:first-child) {
+        display: none;
+    }
+
+    .side-bar {
+        padding: 10px 20px;
+    }
+
+    .side-bar-hamburger {
+        display: block;
+    }
+
+    .hamburger {
+        top: 15px;
+    }
+}
+    

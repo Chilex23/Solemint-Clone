@@ -9,3 +9,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 900px) {
+    .main {
+        height: 100vh;
+    }
+    .main-body p {
+        position: relative;
+    }
+}
